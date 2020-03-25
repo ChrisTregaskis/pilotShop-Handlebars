@@ -1,0 +1,207 @@
+/* desktop mode */
+@media screen and (min-width:1000px) {
+
+    .content-area {
+        width: 970px;
+        margin: 0 auto;
+    }
+    
+    .header {
+        padding-top: 14px;
+        padding-bottom: 10px;
+    }
+    
+    .header-phone {
+        display: block;
+        float: left;
+    }
+    
+    .header-phone a {
+        color: #a2a2a2;
+        font-size: 1.4rem;
+        font-weight: normal;
+        vertical-align: baseline;
+    }
+    
+    .header-phone a:hover {
+        color: #589ec2;
+    }
+    
+    .header-phone a:visited {
+        color: #a2a2a2;
+    }
+    
+    .header-search {
+        float: right;
+        margin-top: -5px;
+        font-size: 1.4rem;
+    }
+    
+    .header-cart, .header-currency {
+        display: inline-block;
+        float: right;
+        line-height: inherit;
+        vertical-align: top;
+    }
+    
+    .header-cart button, .header-currency select {
+        margin-right: 1.9rem;
+        font-size: inherit;
+        line-height: inherit;
+        vertical-align: top;
+    }
+    
+    .header-user {
+        float: right;
+        clear: none;
+        margin-top: auto;
+        margin-right: 14px;        
+    }
+    
+    .header-user-button {
+        font-size: inherit;
+        line-height: inherit;
+        vertical-align: top;
+    }
+    
+    .header-cart::after, .header-currency::after, .header-user::after {
+        display: inline-block;
+        content:"";
+        width: 1px;
+        background: #e9ebed;
+        vertical-align: inherit;
+        position: absolute;
+        top: 0;
+        height: 51px;
+    }
+    
+    .header-logo {
+        display: block;
+        float: left;
+        height: 40px;
+        margin: auto 0;
+    }
+    
+    .header-menu {
+        margin: 2rem auto;
+        float: right;
+        color: #3b3442;
+        font-size: 1.6rem;
+        margin: auto 0;
+        line-height: 40px;
+    }
+    
+    #headermenu-dropdown {
+        display: none;
+    }
+    
+    .header-menu a {
+        display: initial;
+        margin-right: 2px;
+    }
+    
+    .header-menu a {
+        border: 2px solid transparent;
+        padding: 1rem;
+        color: #3b3442;
+        text-decoration: none;
+        font-size: 1.4rem;
+    }
+
+    .header-menu a:hover {
+        border: 2px solid #3b3442;
+    }
+
+    #navigation-active {
+        border: 2px solid #3b3442;
+    }
+    
+    .header-sticky {
+        overflow: auto;
+        position: sticky;
+        top: 0px;
+        z-index: 999;
+        padding: 30px 0;
+    }
+    
+    .swiper-caption {
+        position: absolute;
+        padding: 10px;
+        left: 20px;
+        right: 20px;
+        top: 32%;
+        transform: translateY(-52%);
+    }
+    
+    .swiper h2 {
+        font-size: 7.2rem;
+        letter-spacing: 0.4rem;
+    }
+    
+    .swiper h3 {
+        display: initial;
+        font-size: 1.8rem;
+        margin-top: 0px;
+    }
+    
+    .swiper button {
+        margin-top: 22px;
+    }
+    
+    .showcase {
+        position: relative;
+        margin-top: -145px;
+    }
+
+    .showcase-block {
+        display: initial;
+        position: relative;
+        margin: 0 auto;
+        margin-right: 30px;
+        width: 303px;
+    }
+
+    .showcase-block h3 {
+        text-align: left;
+        font-size: 2.4rem;
+        margin: 0 0 6px 0;
+    }
+
+    .showcase-block h4 {
+        text-align: left;
+        font-size: 1.6rem;
+    }
+
+    .showcase-block button {
+        display: none;
+    }
+    
+    .product-img {
+        float: none;
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .product-description {
+        display: initial;
+    }
+    
+}
+
+@media screen and (min-width:1300px) {
+    .content-area {
+        width: 1170px;
+    }
+
+    .swiper-caption {
+        top: 50%;
+    }
+
+    .showcase-block {
+        display: initial;
+        position: relative;
+        margin: 0 auto;
+        margin-right: 30px;
+        width: 370px;
+    }
+}

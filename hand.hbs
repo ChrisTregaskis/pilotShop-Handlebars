@@ -1,0 +1,16 @@
+{{#each products}}
+    <div class="product-box">
+        <div class="product-img">
+            {{#if discount}}
+            <div class="sticker discount">{{discount}}</div>
+             {{/if}}
+            <div class="sticker new">New</div>
+            <img src="{{image}}">
+        </div>
+        <div class="product-info">
+            <h2 class="product-name">{{name}}</h2>
+            <div class="product-description">{{desc}}</div>
+            <div class="product-price">From <span class="sale-price">{{price}}</span> <span class="old-price">{{originalPrice}}</span></div>
+        </div>
+    </div>
+{{/each}}
